@@ -457,7 +457,7 @@ img {
   background-color: black;
 }
 
-.header-inner__hamburger-button {
+.header__hamburger-button {
   display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -475,7 +475,7 @@ img {
 }
 
 @media only screen and (max-width: 520px) {
-  .header-inner__hamburger-button {
+  .header__hamburger-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -599,7 +599,7 @@ img {
   background-color: #eb4917;
 }
 
-.hero__hr {
+.hr {
   margin: 0;
 }
 
