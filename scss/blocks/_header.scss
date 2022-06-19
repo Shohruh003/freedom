@@ -29,7 +29,7 @@
   line-height: 10px;
   background-color: black;
 }
-.header-inner__hamburger-button {
+.header__hamburger-button {
   display: none;
   align-items: center;
   flex-direction: column;
@@ -41,7 +41,7 @@
 
 
 @media only screen and (max-width: 520px) {
-  .header-inner__hamburger-button {
+  .header__hamburger-button {
     display: flex;
   }
   .nav , .nav__item {
