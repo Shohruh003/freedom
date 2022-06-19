@@ -1,0 +1,56 @@
+.control {
+  background-image: url("../../img/health.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.control__inner {
+  padding-top: 340px;
+  padding-bottom: 300px;
+}
+
+.control__content {
+  margin-left: 655px;
+  width: 480px;
+}
+.control__heading {
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 30px;
+  @include textStyle(50px, 120%, #ffffff);
+}
+.control__text {
+  font-weight: 400;
+  display: flex;
+  margin: 0;
+  margin-bottom: 30px;
+  @include textStyle(16px, 150%, #ffffff);
+}
+.control__text::before {
+  width: 8px;
+  height: 120px;
+  margin-right: 40px;
+  content: "";
+  background-color: #ffffff;
+}
+.control__button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  padding-top: 12px;
+  padding-right: 46px;
+  padding-bottom: 12px;
+  padding-left: 46px;
+  border: none;
+  background-color: rgb(234, 98, 92);
+  color: #ffffff;
+  font-variant: small-caps;
+}
+.control__button:hover {
+  cursor: pointer;
+  background-color: rgb(247, 73, 20);
+}
+.control__button:active {
+  background-color: rgb(235, 73, 23);
+}
