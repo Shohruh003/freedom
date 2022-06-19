@@ -21,16 +21,7 @@
     border: none;
   }
 }
-.header-inner__hamburger-button {
-  display: none;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 20px;
-  border: none;
-  background-color: transparent;
-}
+
 .hamburger__line {
   width: 20px;
   height: 3px;
@@ -38,16 +29,26 @@
   line-height: 10px;
   background-color: black;
 }
+.header-inner__hamburger-button {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+}
+
 
 @media only screen and (max-width: 520px) {
-  .navbar , .nav__item {
+  .header-inner__hamburger-button {
+    display: flex;
+  }
+  .nav , .nav__item {
     display: none;
   }
-  .hamburger-button {
-    display: block;
-  }
 
-  .header__input  {
+  .header__input {
     display: none;
   }
 }

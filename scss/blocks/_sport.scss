@@ -1,6 +1,9 @@
 .sport {
   margin-top: 50px;
 }
+.sport__mobile {
+  display: none;
+}
 
 .sportList {
   @include flexStayle(fex-end, space-between);
@@ -8,21 +11,25 @@
   padding: 0;
   margin: 0;
 }
+
 .sportList__item {
   width: 242px;
 }
+
 .sportList__heading {
   font-weight: 700px;
   @include textStyle(18px, 150%, #000000);
   margin: 0;
   margin-bottom: 30px;
 }
+
 .sportList__text {
   font-weight: 400px;
   @include textStyle(14px, 160%, #000000);
   margin: 0;
   margin-bottom: 20px;
 }
+
 .sportList__link {
   font-weight: 700px;
   @include flexStayle(center,start);
@@ -54,18 +61,21 @@
 
 .sport__flexible {
   @include flexStayle(center, space-between);
+  padding-top: 140px;
+  padding-bottom: 70px;
 }
+
 .sport__content {
-  padding-top: 200px;
-  padding-bottom: 250px;
   width: 363px;
 }
+
 .sport__heading {
   font-weight: 700px;
   margin: 0;
   margin-bottom: 40px;
   @include textStyle(40px, 56px, #000000);
 }
+
 .sport__text {
   font-weight: 400px;
   display: flex;
@@ -73,6 +83,7 @@
   margin-bottom: 40px;
   @include textStyle(15px, 150%, rgba(0, 0, 0,0.6));
 }
+
 .sport__text::before {
   width: 8px;
   height: 70px;
@@ -80,6 +91,7 @@
   content: "";
   background-color: rgba(0, 0, 0,0.6);
 }
+
 .sport__button {
   font-weight: 400px;
   padding-top: 12px;
@@ -91,10 +103,12 @@
   color: #ffffff;
   font-variant: small-caps;
 }
+
 .sport__button:hover {
   cursor: pointer;
   background-color: rgb(247, 73, 20);
 }
+
 .sport__button:active {
   background-color: rgb(235, 73, 23);
 }
@@ -105,6 +119,9 @@
 
 
 @media only screen and (max-width: 520px) {
+  .sport__mobile {
+    display: block;
+  }
   .sportList {
     display: none;
     text-align: center;
@@ -119,6 +136,47 @@
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.06);
     border-radius: 2px;
   }
-  .sport__inner {
+  .sport__flexible {
+    flex-direction: column-reverse;
+    margin-top: 110px;
+  }
+
+  .sport__content {
+    margin-top: 41px;
+    width: 370px;
+  }
+  .sport__heading {
+    margin: 0;
+    margin-bottom: 30px;
+    @include textStyle(46px, 120%, #000000);
+  }
+  
+  .sport__text {
+    margin-bottom: 30px;
+    @include textStyle(15px, 150%, rgba(0, 0, 0,0.6));
+  }
+
+  .sport__img {
+    width: 350px;
+    height: auto;
+  }
+
+  .sport__text::before {
+    height: 110px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .sport__content {
+    width: 300px;
+  }
+
+  .sport__img {
+    width: 300px;
+    height: auto;
+  }
+
+  .sport__text::before {
+    height: 140px;
   }
 }

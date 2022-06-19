@@ -54,3 +54,36 @@
 .control__button:active {
   background-color: rgb(235, 73, 23);
 }
+
+@media only screen and (max-width: 520px) {
+  
+  .control__inner {
+    padding-top: 96px;
+    padding-bottom: 106px;
+  }
+  
+  .control__content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+  }
+  .control__heading {
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 30px;
+    @include textStyle(50px, 120%, #ffffff);
+  }
+  .control__text::before {
+    height: 140px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  
+  .control__content {
+    width: 300px;
+  }
+  .control__text::before {
+    height: 200px;
+  }
+}
