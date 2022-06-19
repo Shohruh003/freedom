@@ -766,9 +766,15 @@ img {
   border-radius: 20px;
 }
 
+.coruselList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 @media only screen and (max-width: 520px) {
   .sport__mobile {
-    display: block;
+    display: inline-block;
   }
   .sportList {
     display: none;
